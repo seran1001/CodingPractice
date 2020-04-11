@@ -48,6 +48,24 @@ public class CodeWar {
 		System.out.println(Integer.parseInt(result));
 
 	}
+
+  /**Check to see if a string has the same amount of 'x's and 'o's. The method must return a boolean and be case insensitive. The string can contain any char. */
+  public static boolean getXO (String str) {
+    int xcount =0;
+    int ocount = 0;
+    // Good Luck!!
+for (int i = 0; i<str.length(); i++) {
+if (str.charAt(i) =='x') {
+xcount = xcount+1;
+  } 
+  if (str.charAt(i) =='o') {
+ocount = ocount+1;
+  } 
+}
+return xcount == ocount;
+}
+
+
 /**total passengers in the bus: 3 Ways to code */
 	public static int countPassengers1(ArrayList<int[]> stops) {
 		// Code here!
